@@ -1,0 +1,55 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('tabukag.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.calculator {
+    background-color: rgba(60, 121, 151, 0.13);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px black;
+}
+
+#result {
+    width: 100%;
+    padding: 10px;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 50px;
+    background-color: rgb(43, 41, 41);
+    color: white;
+    border-radius: 20px;
+}
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgba(224, 255, 49, 0.705);
+    color: aliceblue;
+    cursor: pointer;
+    transition: backgound-color 0.3s;
+}
+
+button:hover {
+    background-color: rgba(156, 184, 2, 0.705);
+}
+
+button.zero {
+    grid-column: span 2;
+}
